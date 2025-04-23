@@ -1,85 +1,95 @@
-*{
+* {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-body{
+body {
     background-color: rgb(115, 170, 241);
 }
-form{
-    height: 500px;
-    width: 850px;
+form {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
-    margin-left: 295px;
-
+    margin: 100px auto;
+    max-width: 850px;
 }
-.container{
-   
+.container {
     background-color: white;
     height: 500px;
-    /* margin-top: 100px; */
     width: 425px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: space-around; */
-    
 }
-img{
+img {
     height: 500px;
-    margin-top: 4px;
     width: 425px;
-    /* margin-top: 100px; */
+    object-fit: cover;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    background-color: rgb(34, 194, 58);
 }
-.one{
+.one {
     margin-top: 90px;
     height: 50px;
-    width:300px ;
+    width: 300px;
     border-radius: 100px;
     text-align: center;
     border-width: 0;
-     background-color: rgba(128, 142, 153, 0.08);
-     font-weight: 500;
-     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-     font-size: 15px;
+    background-color: rgba(128, 142, 153, 0.08);
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
 }
-h1{
+h1 {
     margin-top: 50px;
     font-size: 50px;
-    
 }
-.two{
-    margin-top:35px ;
+.two {
+    margin-top: 35px;
     height: 50px;
-    width:300px ;
-    border-radius: 100px;
-    text-align: center;
-    border-width: 0;
- font-weight: 500;
-    background-color: rgba(128, 142, 153, 0.08);
-}
-button{
-    height: 55px;
-    width:300px ;
+    width: 300px;
     border-radius: 100px;
     text-align: center;
     border-width: 0;
     font-weight: 500;
+    background-color: rgba(128, 142, 153, 0.08);
+}
+button {
+    height: 55px;
+    width: 300px;
+    border-radius: 100px;
+    text-align: center;
+    border-width: 0;
     color: white;
     background-color: blue;
     font-weight: 800;
     font-size: 20px;
     margin-top: 25px;
 }
-.link{
+.link {
     text-align: center;
+    margin-top: 20px;
+}
+
+/* 🔄 Responsive design for mobile and tablets */
+@media (max-width: 900px) {
+    form {
+        flex-direction: column;
+        max-width: 90%;
+    }
+
+    .container, img {
+        width: 100%;
+        border-radius: 10px;
+        height: auto;
+    }
+
+    img {
+        margin-top: 20px;
+        
+    }
 }
